@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_alarm_clock_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_trans30"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑闹钟"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/action_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_action_accept"/>
+
+        <ImageView
+            android:id="@+id/action_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/action_title"
+            android:src="@mipmap/ic_action_cancel"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/remain_time_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="还剩6小时45分闹钟会响"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="16sp"/>
+
+                    <View style="@style/divider_line"/>
+
+                    <TimePicker
+                        android:id="@+id/time_picker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:timePickerMode="spinner"/>
+
+                </LinearLayout>
+
+                <View style="@style/divider_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="6dp"
+                            android:text="重复"/>
+
+                        <TextView
+                            android:id="@+id/repeat_describe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="只响一次"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal">
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_monday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周一"
+                            android:textOn="周一">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_tuesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周二"
+                            android:textOn="周二">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_wednesday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周三"
+                            android:textOn="周三">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_thursday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周四"
+                            android:textOn="周四">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_friday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周五"
+                            android:textOn="周五">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_saturday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周六"
+                            android:textOn="周六">
+                        </ToggleButton>
+
+                        <ToggleButton
+                            android:id="@+id/tog_btn_sunday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textOff="周日"
+                            android:textOn="周日">
+                        </ToggleButton>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="19dp"
+                            android:text="@string/tag"
+                            android:textColor="@color/black_text_normal_common"
+                            android:textSize="16sp"/>
+
+                        <EditText
+                            android:id="@+id/tag_edit_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="19dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:selectAllOnFocus="true"
+                            android:text="闹钟"
+                            android:textColor="@color/darkgray"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <View style="@style/divider_line"/>
+
+                    <RelativeLayout
+                        android:id="@+id/ring_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="6dp"
+                            android:text="铃声"
+                            android:textColor="@color/black_text_normal_common"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:id="@+id/ring_describe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="6dp"
+                            android:drawablePadding="5dp"
+                            android:drawableRight="@mipmap/ic_more_arrow_dark"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:maxWidth="230dp"
+                            android:text="默认铃声"
+                            android:textColor="@color/darkgray"
+                            android:textSize="16sp"/>
+                    </RelativeLayout>
+
+                    <View style="@style/divider_line"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

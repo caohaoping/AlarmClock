@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:background="@drawable/alarm_item_normal_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/alarmTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:text="06:50"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/alarmTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/alarmTime"
+            android:paddingLeft="10dp"
+            android:text="闹钟"
+            android:textSize="14sp"/>
+
+        <com.example.alarmclockdemo.view.SwitchButton
+            android:id="@+id/sb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            app:sbBackDrawable="@drawable/miui_back_drawable"
+            app:sbBackMeasureRatio="2"
+            app:sbThumbDrawable="@drawable/miui_thumb_drawable"
+            app:sbThumbHeight="18dp"
+            app:sbThumbWidth="18dp"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

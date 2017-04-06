@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sbThumbDrawable" format="reference"/>
+        <attr name="sbThumbColor" format="color|reference"/>
+        <attr name="sbThumbMargin" format="dimension|reference"/>
+        <attr name="sbThumbMarginTop" format="dimension|reference"/>
+        <attr name="sbThumbMarginBottom" format="dimension|reference"/>
+        <attr name="sbThumbMarginLeft" format="dimension|reference"/>
+        <attr name="sbThumbMarginRight" format="dimension|reference"/>
+        <attr name="sbThumbWidth" format="dimension|reference"/>
+        <attr name="sbThumbHeight" format="dimension|reference"/>
+        <attr name="sbThumbRadius" format="dimension|reference"/>
+        <attr name="sbBackRadius" format="dimension|reference"/>
+        <attr name="sbBackDrawable" format="reference"/>
+        <attr name="sbBackColor" format="color|reference"/>
+        <attr name="sbFadeBack" format="boolean"/>
+        <attr name="sbBackMeasureRatio" format="float"/>
+        <attr name="sbAnimationDuration" format="integer"/>
+        <attr name="sbTintColor" format="color|reference"/>
+        <attr name="sbTextOn" format="string"/>
+        <attr name="sbTextOff" format="string"/>
+        <attr name="sbTextMarginH" format="dimension"/>
+        <attr name="sbAutoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+
+</resources>
